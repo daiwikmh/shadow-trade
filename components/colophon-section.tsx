@@ -86,17 +86,18 @@ export function ColophonSection() {
           <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Protocols</h4>
           <ul className="space-y-2">
             <li className="font-mono text-xs text-foreground/80">Stellar DEX</li>
-            <li className="font-mono text-xs text-foreground/80">Orderly Network</li>
+            <li className="font-mono text-xs text-foreground/80">Soroban</li>
+            <li className="font-mono text-xs text-foreground/80">Horizon RPC</li>
           </ul>
         </div>
 
-        {/* Chains */}
+        {/* Stack */}
         <div className="col-span-1">
-          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Chains</h4>
+          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Stack</h4>
           <ul className="space-y-2">
-            <li className="font-mono text-xs text-foreground/80">Stellar / XLM</li>
-            <li className="font-mono text-xs text-foreground/80">Ethereum</li>
-            <li className="font-mono text-xs text-foreground/80">Arbitrum</li>
+            <li className="font-mono text-xs text-foreground/80">Next.js</li>
+            <li className="font-mono text-xs text-foreground/80">Go</li>
+            <li className="font-mono text-xs text-foreground/80">Freighter</li>
           </ul>
         </div>
 
@@ -104,18 +105,18 @@ export function ColophonSection() {
         <div className="col-span-1">
           <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">AI Models</h4>
           <ul className="space-y-2">
-            <li className="font-mono text-xs text-foreground/80">GPT-4 Turbo</li>
-            <li className="font-mono text-xs text-foreground/80">Claude 3.5</li>
-            <li className="font-mono text-xs text-foreground/80">Llama 3</li>
+            <li className="font-mono text-xs text-foreground/80">Claude 4.6</li>
+            <li className="font-mono text-xs text-foreground/80">GPT-4o</li>
+            <li className="font-mono text-xs text-foreground/80">OpenRouter</li>
           </ul>
         </div>
 
-        {/* Bridges */}
+        {/* Network */}
         <div className="col-span-1">
-          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Bridges</h4>
+          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Network</h4>
           <ul className="space-y-2">
-            <li className="font-mono text-xs text-foreground/80">Axelar Amplifier</li>
-            <li className="font-mono text-xs text-foreground/80">StellarSwap</li>
+            <li className="font-mono text-xs text-foreground/80">Stellar Testnet</li>
+            <li className="font-mono text-xs text-foreground/80">XLM / USDC</li>
           </ul>
         </div>
 
@@ -160,7 +161,7 @@ export function ColophonSection() {
         <p className="font-mono text-[10px] text-muted-foreground uppercase tracking-widest">
           © 2026 OpenClaw. All rights reserved.
         </p>
-        <p className="font-mono text-[10px] text-muted-foreground">Powered by Stellar. Bridged by Axelar.</p>
+        <p className="font-mono text-[10px] text-muted-foreground">Powered by Stellar. Settled by Soroban.</p>
       </div>
     </section>
   )

@@ -10,28 +10,28 @@ gsap.registerPlugin(ScrollTrigger)
 const signals = [
   {
     date: "2026.02.20",
-    title: "Stellar LOB",
-    note: "Real-time XLM order book streamed via Horizon API. Live on-chain depth with zero simulation.",
+    title: "SDEX Oracle",
+    note: "Live XLM/USDC mid-price derived from Horizon order book. Ask+bid average, polled every few seconds as the mark price for all positions.",
   },
   {
     date: "2026.02.15",
-    title: "Orderly Network",
-    note: "Institutional limit order books for tokenized equities AAPL and NVDA via Orderly and Hyperliquid.",
+    title: "AgentVault",
+    note: "On-chain USDC treasury on Stellar testnet. Deposit and withdraw via Freighter. P&L settled atomically by the admin bridge—never custodied off-chain.",
   },
   {
     date: "2026.02.08",
-    title: "Axelar Bridge",
-    note: "Intent-based cross-chain relayer. Atomic swaps from Stellar to Ethereum and Arbitrum, non-custodial.",
+    title: "Leverage Engine",
+    note: "2×–20× synthetic long/short on XLM/USDC. Collateral locked in LeveragePool; notional P&L credited or seized via settle_pnl on close.",
   },
   {
     date: "2026.01.30",
-    title: "OpenClaw v2",
-    note: "Pluggable AI agent framework. Configure GPT-4, Claude 3.5, or local Llama 3 as your personal trader.",
+    title: "AI Agent",
+    note: "Autonomous agent observes your active session via SSE. Reads live order book depth, wallet events, and open positions—and can suggest or execute trades.",
   },
   {
     date: "2026.01.18",
-    title: "Sub-Agent Mesh",
-    note: "Spawn sentiment and whale-alert sub-agents. Primary agent executes via ZKAuth on consensus signal.",
+    title: "Liquidation",
+    note: "Liquidation engine polls every 5 seconds. When unrealised loss reaches 90% of posted collateral, the position is seized and settled on-chain automatically.",
   },
 ]
 

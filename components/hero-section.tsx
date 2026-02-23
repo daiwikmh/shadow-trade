@@ -60,12 +60,14 @@ export function HeroSection() {
         </h2>
 
         <p className="mt-12 max-w-md font-mono text-sm text-muted-foreground leading-relaxed">
-          Stream live market depth from Stellar DEX and external order books. Trade tokenized assets and markets on stellar with atomic execution and AI-driven strategies.
+          First Integrated OpenClaw Support on Stellar. Stream live XLM/USDC order book depth from the Stellar DEX. Take leveraged long/short positions settled atomically via Soroban smart contracts, guided by an autonomous AI agent.
         </p>
 
         <div className="mt-16 flex items-center gap-8">
           <a
-            href="#work"
+            href="https://stoxterminal.vercel.app/terminal"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 border border-foreground/20 px-6 py-3 font-mono text-xs uppercase tracking-widest text-foreground hover:border-accent hover:text-accent transition-all duration-200"
           >
             <ScrambleTextOnHover text="Start Trading" as="span" duration={0.6} />

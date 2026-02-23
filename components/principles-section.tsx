@@ -16,37 +16,37 @@ export function PrinciplesSection() {
     {
       number: "01",
       titleParts: [
-        { text: "STELLAR ", highlight: false },
-        { text: "DATA ENGINE", highlight: true },
+        { text: "SDEX ", highlight: false },
+        { text: "ORACLE", highlight: true },
       ],
-      description: "Real-time order book depth streamed directly from Horizon RPC. On-chain liquidity, zero simulation, zero latency.",
+      description: "Mark prices derived live from the Stellar DEX Horizon order book. Every position entry, exit, and liquidation is priced against real on-chain liquidity—no simulation, no stale feeds.",
       align: "left",
     },
     {
       number: "02",
       titleParts: [
-        { text: "RELAYER", highlight: true },
-        { text: " EXECUTION", highlight: false },
+        { text: "SYNTHETIC", highlight: true },
+        { text: " POSITIONS", highlight: false },
       ],
-      description: "Intent-based atomic swaps lock your XLM on Stellar and execute on Ethereum or Arbitrum. Never lose custody.",
+      description: "Long and short exposure without swapping tokens. Collateral is locked in a Soroban LeveragePool; P&L is settled atomically by the admin bridge on close. Same model as GMX and Synthetix.",
       align: "right",
     },
     {
       number: "03",
       titleParts: [
-        { text: "OPENCLAW ", highlight: false },
+        { text: "AUTONOMOUS ", highlight: false },
         { text: "AGENT", highlight: true },
       ],
-      description: "Pluggable AI model runtime—GPT-4, Claude 3.5, or Llama 3—acting as your autonomous personal trader.",
+      description: "An AI agent streams your live session via SSE—order book depth, wallet events, open positions. It can observe, comment, and act as your always-on trading co-pilot.",
       align: "left",
     },
     {
       number: "04",
       titleParts: [
-        { text: "ZKAUTH ", highlight: false },
-        { text: "SECURITY", highlight: true },
+        { text: "SOROBAN ", highlight: false },
+        { text: "SETTLEMENT", highlight: true },
       ],
-      description: "Zero-knowledge authentication secures every agent-executed trade via Soroban contracts. Your keys, your terms.",
+      description: "All fund movements are admin-gated Soroban calls. The browser never touches the admin keypair. Deposits and withdrawals are user-signed via Freighter—your keys, your USDC.",
       align: "right",
     },
   ]
