@@ -65,7 +65,7 @@ export function HeroSection() {
 
         <div className="mt-16 flex items-center gap-8">
           <a
-            href="https://stoxterminal.vercel.app/terminal"
+            href="https://shadow-alpha-beryl.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 border border-foreground/20 px-6 py-3 font-mono text-xs uppercase tracking-widest text-foreground hover:border-accent hover:text-accent transition-all duration-200"
