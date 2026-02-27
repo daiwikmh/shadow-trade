@@ -73,7 +73,7 @@ export function HeroSection() {
             <ScrambleTextOnHover text="Launch App" as="span" duration={0.6} />
             <BitmapChevron className="transition-transform duration-[400ms] ease-in-out group-hover:rotate-45" />
           </a>
-          <a
+          {/* <a
             href="https://daiwiks-organization.gitbook.io/shadow-terminal"
             target="_blank"
             rel="noopener noreferrer"
@@ -81,7 +81,7 @@ export function HeroSection() {
           >
             <ScrambleTextOnHover text="Read the Docs" as="span" duration={0.6} />
             <BitmapChevron className="transition-transform duration-[400ms] ease-in-out group-hover:rotate-45" />
-          </a>
+          </a> */}
         </div>
       </div>
 
