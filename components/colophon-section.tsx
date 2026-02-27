@@ -85,9 +85,9 @@ export function ColophonSection() {
         <div className="col-span-1">
           <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Protocols</h4>
           <ul className="space-y-2">
-            <li className="font-mono text-xs text-foreground/80">Stellar DEX</li>
-            <li className="font-mono text-xs text-foreground/80">Soroban</li>
-            <li className="font-mono text-xs text-foreground/80">Horizon RPC</li>
+            <li className="font-mono text-xs text-foreground/80">Uniswap v3</li>
+            <li className="font-mono text-xs text-foreground/80">Flashbots Relay</li>
+            <li className="font-mono text-xs text-foreground/80">EigenCompute</li>
           </ul>
         </div>
 
@@ -95,19 +95,19 @@ export function ColophonSection() {
         <div className="col-span-1">
           <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Stack</h4>
           <ul className="space-y-2">
+            <li className="font-mono text-xs text-foreground/80">Rust / Axum</li>
             <li className="font-mono text-xs text-foreground/80">Next.js</li>
-            <li className="font-mono text-xs text-foreground/80">Go</li>
-            <li className="font-mono text-xs text-foreground/80">Freighter</li>
+            <li className="font-mono text-xs text-foreground/80">Solidity / Foundry</li>
           </ul>
         </div>
 
         {/* AI Models */}
         <div className="col-span-1">
-          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">AI Models</h4>
+          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Infra</h4>
           <ul className="space-y-2">
-            <li className="font-mono text-xs text-foreground/80">Claude 4.6</li>
-            <li className="font-mono text-xs text-foreground/80">GPT-4o</li>
-            <li className="font-mono text-xs text-foreground/80">OpenRouter</li>
+            <li className="font-mono text-xs text-foreground/80">Intel TDX TEE</li>
+            <li className="font-mono text-xs text-foreground/80">Chainlink ETH/USD</li>
+            <li className="font-mono text-xs text-foreground/80">revm / mini-EVM</li>
           </ul>
         </div>
 
@@ -115,8 +115,8 @@ export function ColophonSection() {
         <div className="col-span-1">
           <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Network</h4>
           <ul className="space-y-2">
-            <li className="font-mono text-xs text-foreground/80">Stellar Testnet</li>
-            <li className="font-mono text-xs text-foreground/80">XLM / USDC</li>
+            <li className="font-mono text-xs text-foreground/80">Sepolia Testnet</li>
+            <li className="font-mono text-xs text-foreground/80">ETH / USDC</li>
           </ul>
         </div>
 
@@ -148,7 +148,7 @@ export function ColophonSection() {
           <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Year</h4>
           <ul className="space-y-2">
             <li className="font-mono text-xs text-foreground/80">2026</li>
-            <li className="font-mono text-xs text-foreground/80">Ongoing</li>
+            <li className="font-mono text-xs text-foreground/80">Testnet</li>
           </ul>
         </div>
       </div>
@@ -159,9 +159,9 @@ export function ColophonSection() {
         className="mt-24 pt-8 border-t border-border/20 flex flex-col md:flex-row md:items-center md:justify-between gap-4"
       >
         <p className="font-mono text-[10px] text-muted-foreground uppercase tracking-widest">
-          © 2026 OpenClaw. All rights reserved.
+          © 2026 Shadow. All rights reserved.
         </p>
-        <p className="font-mono text-[10px] text-muted-foreground">Powered by Stellar. Settled by Soroban.</p>
+        <p className="font-mono text-[10px] text-muted-foreground">Contract: 0xB1F0214E2277c2843A9D2d90cCEAd664d19C9f71 · Sepolia</p>
       </div>
     </section>
   )

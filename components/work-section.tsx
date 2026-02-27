@@ -9,39 +9,39 @@ gsap.registerPlugin(ScrollTrigger)
 
 const experiments = [
   {
-    title: "Agent Bridge",
-    medium: "Go Backend",
-    description: "Trusted server holding the admin keypair. Runs the matching engine, SDEX price oracle, liquidation loop, and Soroban client. Never exposes the secret to the browser.",
+    title: "TEE Matching Engine",
+    medium: "Intel TDX / EigenCompute",
+    description: "Price-time priority matching engine written in Rust, running inside an Intel TDX enclave on EigenCompute. The order book exists only in encrypted memory — unreadable by the operator.",
     span: "col-span-2 row-span-2",
   },
   {
-    title: "AgentVault",
-    medium: "Soroban Contract",
-    description: "On-chain USDC treasury. Accepts user deposits, handles withdrawals, and settles P&L via admin-gated settle_pnl.",
+    title: "SdpSettlement",
+    medium: "Solidity / Foundry",
+    description: "On-chain settlement contract deployed on Sepolia. Only accepts calls from the TEE wallet. Executes swaps through Uniswap v3 and records every fill on-chain.",
     span: "col-span-1 row-span-1",
   },
   {
-    title: "AI Trading Agent",
-    medium: "LLM via OpenRouter",
-    description: "Observes live order book, wallet events, and open positions via SSE. Acts autonomously or on-demand as your personal trading co-pilot.",
+    title: "Flashbots Relay",
+    medium: "Flashbots Sepolia",
+    description: "Signed bundles bypass the public mempool entirely. Miners and searchers cannot observe or front-run fills. Settlement is atomic — all-or-nothing.",
     span: "col-span-1 row-span-2",
   },
   {
-    title: "LeveragePool",
-    medium: "Soroban Contract",
-    description: "Locks collateral and records synthetic long/short positions on-chain. Cleared atomically on close or liquidation.",
+    title: "Slippage Simulator",
+    medium: "revm / mini-EVM",
+    description: "Every fill is pre-screened against live Sepolia state before broadcast. Fills with >0.5% slippage are dropped automatically — before any transaction is signed.",
     span: "col-span-1 row-span-1",
   },
   {
-    title: "SDEX Oracle",
-    medium: "Horizon RPC",
-    description: "Polls XLM/USDC order book every few seconds. Computes (ask+bid)/2 as the canonical mark price for entries, exits, and liquidations.",
+    title: "Chainlink Price Feed",
+    medium: "ETH/USD Oracle",
+    description: "Canonical ETH/USD reference price from Chainlink. Used to validate fill prices and detect manipulation before the TEE wallet signs a settlement.",
     span: "col-span-2 row-span-1",
   },
   {
-    title: "Liquidation Engine",
-    medium: "Go Daemon",
-    description: "5-second polling loop across all open positions. Triggers full collateral seizure and on-chain settlement when loss hits 90%.",
+    title: "TDX Attestation",
+    medium: "EigenCompute Verifiable Build",
+    description: "Anyone can verify the deployed matching binary was compiled from the public repo using Intel TDX remote attestation. No trust assumptions required.",
     span: "col-span-1 row-span-1",
   },
 ]
@@ -102,7 +102,7 @@ export function WorkSection() {
           <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">SYSTEM MODULES</h2>
         </div>
         <p className="hidden md:block max-w-xs font-mono text-xs text-muted-foreground text-right leading-relaxed">
-          Live cross-chain trading infrastructure powered by AI agents and zero-knowledge auth.
+          Price-time priority matching in a TEE. Settled atomically through Flashbots. Never touches the public mempool.
         </p>
       </div>
 

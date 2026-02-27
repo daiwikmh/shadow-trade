@@ -10,28 +10,28 @@ gsap.registerPlugin(ScrollTrigger)
 const signals = [
   {
     date: "2026.02.20",
-    title: "SDEX Oracle",
-    note: "Live XLM/USDC mid-price derived from Horizon order book. Ask+bid average, polled every few seconds as the mark price for all positions.",
+    title: "Submit Order",
+    note: "Your order enters an encrypted order book inside an Intel TDX enclave on EigenCompute. No one can see it — not miners, not the operator, not us.",
   },
   {
     date: "2026.02.15",
-    title: "AgentVault",
-    note: "On-chain USDC treasury on Stellar testnet. Deposit and withdraw via Freighter. P&L settled atomically by the admin bridge—never custodied off-chain.",
+    title: "Match Off-Chain",
+    note: "A price-time priority engine matches orders in real time. Before any fill is broadcast, an on-chain simulation checks slippage and reverts — bad fills are dropped before they ever reach a validator.",
   },
   {
     date: "2026.02.08",
-    title: "Leverage Engine",
-    note: "2×–20× synthetic long/short on XLM/USDC. Collateral locked in LeveragePool; notional P&L credited or seized via settle_pnl on close.",
+    title: "Settle on Flashbots",
+    note: "The TEE wallet signs and sends a Flashbots bundle. The transaction skips the public mempool entirely. Your swap executes atomically on Uniswap v3 with no front-running risk.",
   },
   {
     date: "2026.01.30",
-    title: "AI Agent",
-    note: "Autonomous agent observes your active session via SSE. Reads live order book depth, wallet events, and open positions—and can suggest or execute trades.",
+    title: "Slippage Guard",
+    note: ">0.5% slippage aborts the fill before broadcast. Every fill is pre-screened against live Sepolia state using a revm fork — the TEE wallet never signs a bad fill.",
   },
   {
     date: "2026.01.18",
-    title: "Liquidation",
-    note: "Liquidation engine polls every 5 seconds. When unrealised loss reaches 90% of posted collateral, the position is seized and settled on-chain automatically.",
+    title: "Verified Build",
+    note: "Anyone can verify the deployed matching binary was compiled from a specific open-source commit using Intel TDX remote attestation via EigenCompute.",
   },
 ]
 
@@ -135,8 +135,8 @@ export function SignalsSection() {
 
       {/* Section header */}
       <div ref={headerRef} className="mb-16 pr-6 md:pr-12">
-        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">01 / Signals</span>
-        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">MARKET INTEL</h2>
+        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">01 / How It Works</span>
+        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">HOW IT WORKS</h2>
       </div>
 
       {/* Horizontal scroll container */}

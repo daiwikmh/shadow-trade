@@ -16,37 +16,37 @@ export function PrinciplesSection() {
     {
       number: "01",
       titleParts: [
-        { text: "SDEX ", highlight: false },
-        { text: "ORACLE", highlight: true },
+        { text: "PRE-TRADE ", highlight: false },
+        { text: "PRIVACY", highlight: true },
       ],
-      description: "Mark prices derived live from the Stellar DEX Horizon order book. Every position entry, exit, and liquidation is priced against real on-chain liquidity—no simulation, no stale feeds.",
+      description: "Orders never leave the enclave until settlement. The order book exists only in TEE-encrypted memory. No public order book. No pre-trade information leakage — for any participant.",
       align: "left",
     },
     {
       number: "02",
       titleParts: [
-        { text: "SYNTHETIC", highlight: true },
-        { text: " POSITIONS", highlight: false },
+        { text: "MEV ", highlight: false },
+        { text: "PROTECTION", highlight: true },
       ],
-      description: "Long and short exposure without swapping tokens. Collateral is locked in a Soroban LeveragePool; P&L is settled atomically by the admin bridge on close. Same model as GMX and Synthetix.",
+      description: "Every fill is sent through the Flashbots Sepolia relay. Transactions never enter the public mempool. Miners and searchers cannot observe, front-run, or sandwich any trade.",
       align: "right",
     },
     {
       number: "03",
       titleParts: [
-        { text: "AUTONOMOUS ", highlight: false },
-        { text: "AGENT", highlight: true },
+        { text: "TRUSTLESS ", highlight: false },
+        { text: "EXECUTION", highlight: true },
       ],
-      description: "An AI agent streams your live session via SSE—order book depth, wallet events, open positions. It can observe, comment, and act as your always-on trading co-pilot.",
+      description: "Intel TDX attestation proves the matching logic is unmodified. Anyone can verify the deployed binary was compiled from a specific open-source commit. Not even the operator can tamper with fills.",
       align: "left",
     },
     {
       number: "04",
       titleParts: [
-        { text: "SOROBAN ", highlight: false },
+        { text: "ON-CHAIN ", highlight: false },
         { text: "SETTLEMENT", highlight: true },
       ],
-      description: "All fund movements are admin-gated Soroban calls. The browser never touches the admin keypair. Deposits and withdrawals are user-signed via Freighter—your keys, your USDC.",
+      description: "Every fill settles as a real Uniswap v3 swap on Sepolia. The SdpSettlement contract only accepts calls from the TEE wallet. No external actor can trigger or suppress a settlement.",
       align: "right",
     },
   ]
@@ -94,7 +94,7 @@ export function PrinciplesSection() {
       {/* Section header */}
       <div ref={headerRef} className="mb-24">
         <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">03 / Principles</span>
-        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">HOW IT WORKS</h2>
+        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">WHY SHADOW</h2>
       </div>
 
       {/* Staggered principles */}

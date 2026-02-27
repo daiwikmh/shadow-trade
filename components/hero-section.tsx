@@ -40,7 +40,7 @@ export function HeroSection() {
       {/* Left vertical labels */}
       <div className="absolute left-4 md:left-6 top-1/2 -translate-y-1/2">
         <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground -rotate-90 origin-left block whitespace-nowrap">
-          MARKET
+          DARK POOL
         </span>
       </div>
 
@@ -48,7 +48,7 @@ export function HeroSection() {
       <div ref={contentRef} className="flex-1 w-full">
         <SplitFlapAudioProvider>
           <div className="relative">
-            <SplitFlapText text="STOX" speed={80} />
+            <SplitFlapText text="SHADOW" speed={80} />
             <div className="mt-4">
               <SplitFlapMuteToggle />
             </div>
@@ -56,11 +56,11 @@ export function HeroSection() {
         </SplitFlapAudioProvider>
 
         <h2 className="font-[var(--font-bebas)] text-muted-foreground/60 text-[clamp(1rem,3vw,2rem)] mt-4 tracking-wide">
-          SMART TRADING TERMINAL
+          TRADE IN THE DARK. SETTLE ON-CHAIN.
         </h2>
 
         <p className="mt-12 max-w-md font-mono text-sm text-muted-foreground leading-relaxed">
-          First Integrated OpenClaw Support on Stellar. Stream live XLM/USDC order book depth from the Stellar DEX. Take leveraged long/short positions settled atomically via Soroban smart contracts, guided by an autonomous AI agent.
+          Shadow is a trustless dark pool for ETH/USDC. Orders are matched inside a TEE — invisible to everyone, including the operator — and settled atomically through Flashbots with zero mempool exposure.
         </p>
 
         <div className="mt-16 flex items-center gap-8">
@@ -70,7 +70,7 @@ export function HeroSection() {
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 border border-foreground/20 px-6 py-3 font-mono text-xs uppercase tracking-widest text-foreground hover:border-accent hover:text-accent transition-all duration-200"
           >
-            <ScrambleTextOnHover text="Start Trading" as="span" duration={0.6} />
+            <ScrambleTextOnHover text="Launch App" as="span" duration={0.6} />
             <BitmapChevron className="transition-transform duration-[400ms] ease-in-out group-hover:rotate-45" />
           </a>
           <a
@@ -79,7 +79,7 @@ export function HeroSection() {
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 border border-foreground/20 px-6 py-3 font-mono text-xs uppercase tracking-widest text-foreground hover:border-accent hover:text-accent transition-all duration-200"
           >
-            <ScrambleTextOnHover text="Gitbook" as="span" duration={0.6} />
+            <ScrambleTextOnHover text="Read the Docs" as="span" duration={0.6} />
             <BitmapChevron className="transition-transform duration-[400ms] ease-in-out group-hover:rotate-45" />
           </a>
         </div>
