@@ -18,7 +18,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 const bebasNeue = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-bebas" })
 
 export const metadata: Metadata = {
-  title: "STOX - Smart Trading Terminal",
+  title: "shadow - Smart Trading Terminal",
   description:
     "Interface studies in controlled environments. We design systems that behave, not just screens that display.",
   generator: "v0.app",
